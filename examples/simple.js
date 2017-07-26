@@ -7,7 +7,7 @@ var TIMEOUT = 5000; //5 seconds
 //you REALLY would like to exlude 0.0.0.0 from the interfaces bound to
 //mdns.excludeInterface('0.0.0.0')
 
-var browser = mdns.createBrowser(); //defaults to mdns.ServiceType.wildcard
+var browser = mdns.createBrowser(mdns.udp('_coap')); //defaults to mdns.ServiceType.wildcard
 //var browser = mdns.createBrowser(mdns.tcp('googlecast'));
 //var browser = mdns.createBrowser(mdns.tcp("workstation"));
 
