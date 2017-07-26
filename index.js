@@ -69,4 +69,3 @@ module.exports.tcp = st.protocolHelper('tcp');
 
 /** @function */
 module.exports.udp = st.protocolHelper('udp');
-
